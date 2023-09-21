@@ -27,3 +27,16 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## My answer to the invariant question
+For the loop invariant of this function, we know that the first two numbers of
+the fibonacci sequence are 0 and 1. In other words regardless of what number we
+pass into the fib() function the array we return will always start with [0,1]
+and continue up to whatever number we use as an argument. With this in mind we
+merely have to keep computing lower values of n until we get down to the base case
+where n = 1 and then the if statement will trigger and end the recursive calls. 
+
+Essentially the loop invariant is that when n < 2 the function returns [0] or [0,1].
+Building on this when n >= 2 the return array will still start with [0,1] but will 
+use these unchanging elements to recursively compute the nth fibonacci number. 
+
