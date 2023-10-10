@@ -27,3 +27,13 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## My answer for the invariant
+
+A good invariant for this function that describes the "state of the world" is that
+fib(n) = fib(n-1) + fib(n-2). Regardless of what number is given as an argument or
+how deep the recursive calls get it's always true that the the current Fibonacci
+number is simply the sum of the previous two Fibonacci numbers. This is a good 
+invariant because although it describes the Fibonacci sequence it's also how the
+recursive function fib() is built. It's because the current number is dependent on
+the previous two that a recursive function works so well for this problem. 
